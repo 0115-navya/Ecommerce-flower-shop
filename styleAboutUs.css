@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #c43a6d;
+  --light-black: rgba(0, 0, 0, 0.89);
+  --black: black;
+  --cream: #fbf1d3;
+  --grey: #aaa;
+  --bg-color: #ff97a2;
+  --accent-color: #f05e8a;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cream);
+  padding: 15px 30px;
+  height: 60px;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  height: 200px;
+  width: 200px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  flex: 2;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-bar ul li {
+  position: relative;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+  color: var(--primary-color);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  background-image: url("./assets/background-flowershop.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--light-black);
+  margin: 0;
+  padding: 0;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-section {
+  background-color: var(--cream);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-header h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.about-header p {
+  color: var(--light-black);
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  margin-bottom: 10px;
+}
+
+.about-content h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  color: var(--light-black);
+  line-height: 1.8;
+}
+
+.about-values h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-values ul li {
+  font-size: 1 rem;
+  color: var(--light-black);
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+.about-text {
+  width: 700px;
+  display: inline-block;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+/* Footer Section for About us */
+
+footer {
+  background-color: #fbf1d3;
+  height: 200px;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  padding: 0 20px; /* Horizontal padding */
+}
+
+.footer-content {
+  display: flex; /* Flexbox for horizontal alignment */
+  align-items: center; /* Center vertically within footer */
+  justify-content: center; /* Center content */
+}
+
+.footer-logo {
+  max-height: 200px; /* Adjust logo size */
+  margin-right: 20px; /* Space to the right of the logo */
+}
+
+.footer-links {
+  display: flex; /* Use flexbox for horizontal layout */
+}
+
+.footer-column {
+  margin: 0 20px; /* Space between columns */
+}
+
+.footer-column a {
+  display: block; /* Block display for links */
+  text-decoration: none; /* Remove underline from links */
+  color: #c43a6d; /* Link color */
+  margin: 5px 0; /* Spacing between links */
+}
+
+.footer-column a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
